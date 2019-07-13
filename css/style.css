@@ -1,0 +1,32 @@
+html,
+body {
+    height: 100vh;
+}
+
+#stage {
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stage_caption {
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#stage-caption h1 {
+    /* color: white; */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+#stage-caption p {
+    text-align: center;
+}
