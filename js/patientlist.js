@@ -1,7 +1,6 @@
 let comprehendmedical = new AWS.ComprehendMedical({apiVersion: '2018-10-30', region:'us-west-2', accessKeyId:'AKIASJF5PNYJ4DR3OETF', secretAccessKey:'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'});
 let id = 100;
 
-
 function concatenateInput() {
     let q1 = document.getElementById('FormControlTextarea1').value;
     let q2 = document.getElementById('FormControlTextarea2').value;
