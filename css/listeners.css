@@ -1,9 +1,8 @@
-.container {
-    margin-bottom: -5rem;
-}
-
 .title {
-    padding: 2rem 0;
+    color: black;
+    margin-top: -7rem;
+    margin-bottom: -15rem;
+
 }
 
 .card {
@@ -18,6 +17,10 @@
     list-style-type: none;
 }
 
- li {
+li {
     font-weight: 200;
+}
+
+.listeners {
+    padding-top: -10rem;
 }
