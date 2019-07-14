@@ -1,11 +1,11 @@
 html,
 body {
     height: 100vh;
+    font-family: 'Baloo Paaji', cursive;
 }
 
-#stage {
+#bg {
     background: url(../images/bg.jpg) no-repeat center center;
-    filter: blur(4px);
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -14,35 +14,56 @@ body {
     justify-content: center;
 }
 
-#stage-caption {
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 200;
-    max-width: 60rem;
-    margin: 0 auto;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+h1,h2,h3,h4,h5 {
+    color: #333;
 }
 
-#stage-caption h1 {
-    color: rgba(234, 191, 147, 1);
-    font-size: 160px;
-    font-family: 'DM Serif Display', serif;
+h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    padding: 10rem 0;
+}
+
+.container h1 {
+    color: rgb(38, 189, 138);
+    font-size: 10rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 2rem;
-    text-shadow: 5px 5px black ;
-}
-
-#patient {
-    text-align: right;
-}
-
-
-#stage-caption p {
+    text-shadow: 5px 5px rgb(70, 151, 111);
     text-align: center;
 }
 
+.btn-success{
+    background-color: rgb(38, 189, 138);
+    border-color: rgb(38, 189, 138);
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #13dda0;
+    border-color: #13dda0;
+}
+
+.container p {
+    color: rgb(38, 189, 138);
+    text-align: center;
+}
+
+#section-one {
+    background-color: #c4c4c4;
+}
+
+.stageButton {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+}
