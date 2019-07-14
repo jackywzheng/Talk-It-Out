@@ -73,10 +73,6 @@ img {
     font-size: 1.5rem;
 }
 
-.con-footer {
-    margin
-}
-
 .question {
     font-weight: bold;
     font-size: 1.3em;
@@ -95,4 +91,8 @@ p.question {
 
 .question-answer {
     text-align: center;
+}
+
+.modal-footer {
+    padding-bottom: -50px;
 }
