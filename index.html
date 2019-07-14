@@ -1,93 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
-    <!-- Font CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <title>Talk It Out</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Font CSS-->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Talk It Out</title>
 </head>
+
 <body>
-    <div id="bg">
-      <div class="container">
-        <h1 class="display-3">Talk It Out</h1>
-        <div class="row justify-content-around">
-            <div class="col-md-4"><a href="https://testyj.auth.us-west-2.amazoncognito.com/login?response_type=code&client_id=j8uh20r4n9s40093osuvbb7v6&redirect_uri=https://simple-website-talkitoutdev.mybluemix.net/talk.html" 
-              class="btn btn-success btn-block stageButton" target="_blank">Are you <br> Therapist or Social worker?</a></div>
-            <div class="col-md-4 off-md-4" id="patient"><a href="#" class="btn btn-success btn-block stageButton">Are you <br> a Patient?</a></div>
+  <div id="bg">
+    <div class="container">
+      <h1 class="display-3">Talk It Out</h1>
+      <div class="row justify-content-around">
+        <div class="col-md-4"><a
+            href="https://testyj.auth.us-west-2.amazoncognito.com/login?response_type=code&client_id=j8uh20r4n9s40093osuvbb7v6&redirect_uri=https://simple-website-talkitoutdev.mybluemix.net/talk.html"
+            class="btn btn-success btn-block stageButton" target="_blank">Are you <br> Therapist or Social worker?</a>
         </div>
-      </div> 
+        <div class="col-md-4 off-md-4" id="patient"><a href="#" class="btn btn-success btn-block stageButton"
+            data-toggle="modal" data-target="#myModal">Are you <br> a Patient?</a></div>
+      </div>
     </div>
-  
-    <section id="section-one">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-              <h2 class="display-3" style="color: black;">"Talk it out"</h2>
-              <p class="whoAreWe">is a web app that connects users, no, people, who are struggling with mental health to certified professionals 
-              who can help. Despite recent efforts at increasing mental health awareness, people are still hesitant to seek help because of 
-              social stigmatization. It can sometimes be difficult to even get out of bed, nevertheless going out of your way to see someone 
-              on the other side of town. </p>
-            
-          </div>
-          <div class="col-lg-5 off-lg-1">
-              <h2 style="color: black;">Our goal</h2><p class="whoAreWe">is to encourage people who struggle with mental health in taking the first step and helping make treatment more accessible. Let's talk it out!
-              <br><br>
-              Suicide is the 3rd leading cause of death in youth ages 10 - 24.
-              70% of youth in state and local juvenile justice systems have a mental illness.
-              Serious mental illness costs America $193.2 billion in lost earnings per year.</p> 
-          </div>
+  </div>
+
+  <section id="section-one">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="display-3" style="color: black;">"Talk it out"</h2>
+          <p class="whoAreWe">is a web app that connects users, no, people, who are struggling with mental health to
+            certified professionals
+            who can help. Despite recent efforts at increasing mental health awareness, people are still hesitant to
+            seek help because of
+            social stigmatization. It can sometimes be difficult to even get out of bed, nevertheless going out of your
+            way to see someone
+            on the other side of town. </p>
+
+        </div>
+        <div class="col-lg-5 off-lg-1">
+          <h2 style="color: black;">Our goal</h2>
+          <p class="whoAreWe">is to encourage people who struggle with mental health in taking the first step and
+            helping make treatment more accessible. Let's talk it out!
+            <br><br>
+            Suicide is the 3rd leading cause of death in youth ages 10 - 24.
+            70% of youth in state and local juvenile justice systems have a mental illness.
+            Serious mental illness costs America $193.2 billion in lost earnings per year.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="section-two">
-      <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <img src="images/dr_gro.png" alt="Dr Gro Harlem Brundtland">
-            </div>
-            <div class="col-lg-5 offset-lg-1">
-              <h6><b>Mental disorders</b> affect one in FOUR people</h6>
-              <h2>Treatment available,<br/> but not being used</h2>
-              <blockquote class="blockquote">
-                &rdquo;Mental illness is not a personal failure. In fact, if there is failure, 
-                it is to be found in the way we have responded to people with mental and brain disorders&ldquo;
-                <footer class="blockquote-footer">
-                    Dr Gro Harlem Brundtland, <cite>Director-General of WHO</cite>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
+  <section id="section-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/dr_gro.png" alt="Dr Gro Harlem Brundtland">
         </div>
-    </section>
-
-    <footer id="main-footer">
-      <div class="container con-footer">
-          <div class="row">
-              <div class="col-md-6">
-                  <br>
-                  copyright &copy; 2019 Talkitout, all right is reserved
-              </div>
-              <div class="col-md-6">
-                <img src="images/angelhack.png" alt="angelhack logo" style="width: 100px">
-                <img src="images/aws.jpg" alt="aws logo" style="width: 80px">
-                <img src="images/ibm.png" alt="ibm logo" style="width: 80px">
-                <img src="images/agora.jpg" alt="agora logo" style="width: 80px">
-              </div>
-          </div>
+        <div class="col-lg-5 offset-lg-1">
+          <h6><b>Mental disorders</b> affect one in FOUR people</h6>
+          <h2>Treatment available,<br /> but not being used</h2>
+          <blockquote class="blockquote">
+            &rdquo;Mental illness is not a personal failure. In fact, if there is failure,
+            it is to be found in the way we have responded to people with mental and brain disorders&ldquo;
+            <footer class="blockquote-footer">
+              Dr Gro Harlem Brundtland, <cite>Director-General of WHO</cite>
+            </footer>
+          </blockquote>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <footer id="main-footer">
+    <div class="container con-footer">
+      <div class="row">
+        <div class="col-md-6">
+          <br>
+          copyright &copy; 2019 Talkitout, all right is reserved
+        </div>
+        <div class="col-md-6">
+          <img src="images/angelhack.png" alt="angelhack logo" style="width: 100px">
+          <img src="images/aws.jpg" alt="aws logo" style="width: 80px">
+          <img src="images/ibm.png" alt="ibm logo" style="width: 80px">
+          <img src="images/agora.jpg" alt="agora logo" style="width: 80px">
+        </div>
+      </div>
+    </div>
   </footer>
-      
+
+  <div class="container">
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Tell Us How You Feel</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <!-- <form action="/action_page.php"> -->
+          <p class="question">1. Do you have any physical disabilities? If yes, tell us more.
+          </p>
+          <div class="form-group" style="padding: 20px;">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+
+          <p class="question">2. I feel that my worry was out of my control.</p>
+          <div class="form-group" style="padding: 20px;">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+          <p class="question">3. Do you feel restless, agitated, frantic, or tense.</p>
+          <div class="form-group" style="padding: 20px;">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+          <p class="question">4. Do you have trouble sleeping? Tell us more.</p>
+          <div class="form-group" style="padding: 20px;">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+
+
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="submit" href="/" class="btn btn-success">Submit</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <!-- BootStrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
