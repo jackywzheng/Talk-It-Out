@@ -1,0 +1,23 @@
+.container {
+    margin-bottom: -5rem;
+}
+
+.title {
+    padding: 2rem 0;
+}
+
+.card {
+    border: 0px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.specialty {
+    list-style-type: none;
+}
+
+ li {
+    font-weight: 200;
+}

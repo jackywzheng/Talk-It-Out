@@ -14,8 +14,12 @@ body {
     justify-content: center;
 }
 
-h1,h2,h3,h4,h5 {
-    color: #333;
+h2 {
+    color: white;
+}
+
+b {
+    font-size: 1.5em;
 }
 
 h6 {
@@ -54,13 +58,15 @@ img {
     border-color: #13dda0;
 }
 
-.container p {
-    color: rgb(38, 189, 138);
-    text-align: center;
+#section-two {
+    background-color: #484550;
+    color: white;
 }
 
-#section-one {
-    background-color: #c4c4c4;
+.whoAreWe {
+    color: black;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
 }
 
 .stageButton {
