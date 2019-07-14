@@ -15,59 +15,78 @@
 </head>
 <body>
     <div id="bg">
-        <div class="container">
-          <h1 class="display-3">Talk It Out</h1>
-          <div class="row justify-content-around">
-              <div class="col-md-4"><a href="https://testyj.auth.us-west-2.amazoncognito.com/login?response_type=code&client_id=j8uh20r4n9s40093osuvbb7v6&redirect_uri=https://google.ca" 
-                class="btn btn-success btn-block stageButton">Are you <br> Therapist or Social worker?</a></div>
-              <div class="col-md-4 off-md-4" id="patient"><a href="#" class="btn btn-success btn-block stageButton">Are you <br> a Patient?</a></div>
-          </div>
-        </div> 
-      </div>
+      <div class="container">
+        <h1 class="display-3">Talk It Out</h1>
+        <div class="row justify-content-around">
+            <div class="col-md-4"><a href="https://testyj.auth.us-west-2.amazoncognito.com/login?response_type=code&client_id=j8uh20r4n9s40093osuvbb7v6&redirect_uri=https://simple-website-talkitoutdev.mybluemix.net/talk.html" 
+              class="btn btn-success btn-block stageButton" target="_blank">Are you <br> Therapist or Social worker?</a></div>
+            <div class="col-md-4 off-md-4" id="patient"><a href="#" class="btn btn-success btn-block stageButton">Are you <br> a Patient?</a></div>
+        </div>
+      </div> 
+    </div>
   
-      <section id="section-one">
-        <div class="container">
+    <section id="section-one">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+              <h2 class="display-3" style="color: black;">"Talk it out"</h2>
+              <p class="whoAreWe">is a web app that connects users, no, people, who are struggling with mental health to certified professionals 
+              who can help. Despite recent efforts at increasing mental health awareness, people are still hesitant to seek help because of 
+              social stigmatization. It can sometimes be difficult to even get out of bed, nevertheless going out of your way to see someone 
+              on the other side of town. </p>
+            
+          </div>
+          <div class="col-lg-5 off-lg-1">
+              <h2 style="color: black;">Our goal</h2><p class="whoAreWe">is to encourage people who struggle with mental health in taking the first step and helping make treatment more accessible. Let's talk it out!
+              <br><br>
+              Suicide is the 3rd leading cause of death in youth ages 10 - 24.
+              70% of youth in state and local juvenile justice systems have a mental illness.
+              Serious mental illness costs America $193.2 billion in lost earnings per year.</p> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-two">
+      <div class="container">
           <div class="row">
             <div class="col-lg-6">
-                <h2 class="display-3" style="color: black;">"Talk it out"</h2>
-                <p class="whoAreWe">is a web app that connects users, no, people, who are struggling with mental health to certified professionals 
-                who can help. Despite recent efforts at increasing mental health awareness, people are still hesitant to seek help because of 
-                social stigmatization. It can sometimes be difficult to even get out of bed, nevertheless going out of your way to see someone 
-                on the other side of town. </p>
-              
+              <img src="/images/dr_gro.png" alt="Dr Gro Harlem Brundtland">
             </div>
-            <div class="col-lg-5 off-lg-1">
-                <h2 style="color: black;">Our goal</h2><p class="whoAreWe">is to encourage people who struggle with mental health in taking the first step and helping make treatment more accessible. Let's talk it out!
-                <br><br>
-                Suicide is the 3rd leading cause of death in youth ages 10 - 24.
-                70% of youth in state and local juvenile justice systems have a mental illness.
-                Serious mental illness costs America $193.2 billion in lost earnings per year.</p> 
+            <div class="col-lg-5 offset-lg-1">
+              <h6><b>Mental disorders</b> affect one in FOUR people</h6>
+              <h2>Treatment available,<br/> but not being used</h2>
+              <blockquote class="blockquote">
+                &rdquo;Mental illness is not a personal failure. In fact, if there is failure, 
+                it is to be found in the way we have responded to people with mental and brain disorders&ldquo;
+                <footer class="blockquote-footer">
+                    Dr Gro Harlem Brundtland, <cite>Director-General of WHO</cite>
+                </footer>
+              </blockquote>
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
-      <section id="section-two">
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <img src="/images/dr_gro.png" alt="Dr Gro Harlem Brundtland">
+    <footer id="main-footer">
+      <div class="container con-footer">
+          <div class="row">
+              <div class="col-md-6">
+                  <br>
+                  copyright &copy; 2019 Talkitout, all right is reserved
               </div>
-              <div class="col-lg-5 offset-lg-1">
-                <h6><b>Mental disorders</b> affect one in FOUR people</h6>
-                <h2>Treatment available,<br/> but not being used</h2>
-                <blockquote class="blockquote">
-                  &rdquo;Mental illness is not a personal failure. In fact, if there is failure, 
-                  it is to be found in the way we have responded to people with mental and brain disorders&ldquo;
-                  <footer class="blockquote-footer">
-                      Dr Gro Harlem Brundtland, <cite>Directoor-General of WHO</cite>
-                  </footer>
-                </blockquote>
+              <div class="col-md-6">
+                <img src="images/angelhack.png" alt="angelhack logo" style="width: 100px">
+                <img src="images/aws.jpg" alt="aws logo" style="width: 80px">
+                <img src="images/ibm.png" alt="ibm logo" style="width: 80px">
+                <img src="images/agora.jpg" alt="agora logo" style="width: 80px">
               </div>
-            </div>
           </div>
-      </section>
-    
+      </div>
+  </footer>
+
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.493.0.min.js"></script>
+  <script src="js/comprehend.js"></script>
       
     <!-- BootStrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

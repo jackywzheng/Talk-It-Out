@@ -28,15 +28,13 @@ h6 {
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
 }
-
-img {
-    max-width: 100%;
-}
-
 .container {
     padding: 10rem 0;
 }
 
+img {
+    max-width: 100%;
+}
 .container h1 {
     color: rgb(38, 189, 138);
     font-size: 10rem;
@@ -72,4 +70,8 @@ img {
 .stageButton {
     padding: 2rem 0;
     font-size: 1.5rem;
+}
+
+.con-footer {
+    margin
 }
