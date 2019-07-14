@@ -13,8 +13,13 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
   <title>Talk It Out</title>
+<<<<<<< HEAD
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.492.0.min.js"></script>
     <script src="js/saveData.js"></script>
+=======
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.492.0.min.js"></script>
+  <script src="js/patientlist.js"></script>
+>>>>>>> d0af910986fd0ac825f5700edb3d098615cccd56
 </head>
 
 <body>
@@ -112,23 +117,58 @@
 
           <!-- Modal body -->
           <!-- <form action="/action_page.php"> -->
-          <p class="question">1. Do you have any physical disabilities? If yes, tell us more.
+          <p class="question">1. I was very anxious, worried or scared about a lot of things in my life.
           </p>
-          <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="FormControlTextarea1" rows="4"></textarea>
+          <div class="question-answer">
+            <label><input type="radio" value="0" name="1" /> Never </label>
+            <label><input type="radio" value="1" name="1" /> Sometimes </label>
+            <label><input type="radio" value="2" name="1" /> Often </label>
+            <label><input type="radio" value="3" name="1" /> Constantly</label>
           </div>
 
-          <p class="question">2. I feel that my worry was out of my control.</p>
-          <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="FormControlTextarea2" rows="4"></textarea>
+          <br>
+          <p class="question">2. I felt that my worry was out of my control.</p>
+          <div class="question-answer">
+            <label><input type="radio" value="0" name="2" /> Never </label>
+            <label><input type="radio" value="1" name="2" /> Sometimes </label>
+            <label><input type="radio" value="2" name="2" /> Often </label>
+            <label><input type="radio" value="3" name="2" /> Constantly</label>
+
           </div>
-          <p class="question">3. Do you feel restless, agitated, frantic, or tense.</p>
-          <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="FormControlTextarea3" rows="4"></textarea>
+          <br>
+          <p class="question">3. I felt restless, agitated, frantic, or tense.</p>
+          <div class="question-answer">
+            <label><input type="radio" value="0" name="3" /> Never </label>
+            <label><input type="radio" value="1" name="3" /> Sometimes </label>
+            <label><input type="radio" value="2" name="3" /> Often </label>
+            <label><input type="radio" value="3" name="3" /> Constantly</label>
           </div>
-          <p class="question">4. Do you have trouble sleeping? Tell us more.</p>
+          <p class="question">4. I had trouble sleeping - I could not fall or stay asleep, and/or didn't
+            feel
+            well-rested when I woke up</p>
+          <div class="question-answer">
+            <label><input type="radio" value="0" name="4" /> Never </label>
+            <label><input type="radio" value="1" name="4" /> Sometimes </label>
+            <label><input type="radio" value="2" name="4" /> Often </label>
+            <label><input type="radio" value="3" name="4" /> Constantly</label>
+          </div>
+          <p class="question">5. Do you have any physical disabilities? If yes, tell us more.
+          </p>
           <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="FormControlTextarea4" rows="4"></textarea>
+            <textarea class="form-control" id="FormControlTextarea1" rows="4" placeholder="optional"></textarea>
+          </div>
+
+          <p class="question">6. Do you feel that your worry was out of your control.</p>
+          <div class="form-group" style="padding: 20px;">
+            <textarea class="form-control" id="FormControlTextarea2" rows="4" placeholder="optional"></textarea>
+          </div>
+          <p class="question">7. Do you feel restless, agitated, frantic, or tense.</p>
+          <div class="form-group" style="padding: 20px;">
+            <textarea class="form-control" id="FormControlTextarea3" rows="4" placeholder="optional"></textarea>
+          </div>
+          <p class="question">8. Do you have trouble sleeping? Tell us more.</p>
+          <div class="form-group" style="padding: 20px;">
+            <textarea class="form-control" id="FormControlTextarea4" rows="4" placeholder="optional"></textarea>
           </div>
 
 
@@ -139,22 +179,22 @@
               <button type="submit" class="btn btn-success" id="submit">Submit</button>
            </form>
           </div>
-
-
         </div>
+
       </div>
     </div>
+  </div>
 
-    <!-- BootStrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+  <!-- BootStrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
