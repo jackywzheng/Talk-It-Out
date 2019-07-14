@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Talk It Out</title>
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.492.0.min.js"></script>
-    <script src="js/patientlist.js"></script>
+    <script src="js/saveData.js"></script>
 </head>
 
 <body>
@@ -135,7 +135,9 @@
 
           <!-- Modal footer -->
           <div class="modal-footer">
-            <button type="submit" onclick='submitForm()' href="/" class="btn btn-success" id="submit">Submit</button>
+            <form action="patientlist.html" method="POST">
+              <button type="submit" onclick='submitForm()' class="btn btn-success" id="submit">Submit</button>
+           </form>
           </div>
 
 
