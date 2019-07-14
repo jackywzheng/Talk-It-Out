@@ -12,8 +12,9 @@
   <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-
   <title>Talk It Out</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.492.0.min.js"></script>
+    <script src="js/patientlist.js"></script>
 </head>
 
 <body>
@@ -114,28 +115,29 @@
           <p class="question">1. Do you have any physical disabilities? If yes, tell us more.
           </p>
           <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            <textarea class="form-control" id="FormControlTextarea1" rows="4"></textarea>
           </div>
 
           <p class="question">2. I feel that my worry was out of my control.</p>
           <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            <textarea class="form-control" id="FormControlTextarea2" rows="4"></textarea>
           </div>
           <p class="question">3. Do you feel restless, agitated, frantic, or tense.</p>
           <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            <textarea class="form-control" id="FormControlTextarea3" rows="4"></textarea>
           </div>
           <p class="question">4. Do you have trouble sleeping? Tell us more.</p>
           <div class="form-group" style="padding: 20px;">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            <textarea class="form-control" id="FormControlTextarea4" rows="4"></textarea>
           </div>
 
 
 
           <!-- Modal footer -->
           <div class="modal-footer">
-            <button type="submit" href="/" class="btn btn-success">Submit</button>
+            <button type="submit" onclick='submitForm()' href="/" class="btn btn-success" id="submit">Submit</button>
           </div>
+
 
         </div>
       </div>
