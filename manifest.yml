@@ -1,0 +1,7 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: simple-website-talkitout
+  name: simple-website-talkitout
+  memory: 64M
+  stack: cflinuxfs2
